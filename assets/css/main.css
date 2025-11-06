@@ -75,3 +75,15 @@ main.container { padding: 28px 20px 48px; }
   .feature-row.reverse .feature-image,
   .feature-row.reverse .feature-text { order: initial; }
 }
+
+/* People grid */
+.person-grid { display: grid; grid-template-columns: repeat(4, minmax(160px, 1fr)); gap: 28px; margin: 8px 0 24px; }
+.person { text-align: center; }
+.avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 10px; border: 3px solid #fff; box-shadow: 0 6px 16px rgba(0,0,0,0.08); background: #e5e7eb; color: #111827; font-weight: 700; font-size: 40px; line-height: 114px; }
+.avatar-fallback { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
+.person-name { font-weight: 600; }
+.person-role { color: var(--muted); font-size: 0.95rem; }
+
+@media (max-width: 900px) {
+  .person-grid { grid-template-columns: repeat(2, minmax(140px, 1fr)); }
+}

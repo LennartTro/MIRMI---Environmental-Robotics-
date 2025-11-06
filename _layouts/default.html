@@ -11,6 +11,9 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        {% if page.permalink != '/' %}
+          {% include nav.html %}
+        {% endif %}
       </div>
     </header>
     {% if page.permalink == '/' %}
