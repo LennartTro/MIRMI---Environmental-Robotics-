@@ -1,7 +1,7 @@
 title: MIRMI Environmental Robotics Lab
 description: Website of our research group
-url: "" # e.g., https://lab.example.com (set after DNS)
-baseurl: "" # set to "/<repo>" only for project pages
+url: "https://lennarttro.github.io" # set custom domain here later
+baseurl: "/MIRMI---Environmental-Robotics-" # project pages path
 permalink: /:categories/:year/:month/:day/:title/
 markdown: kramdown
 theme: null
@@ -29,4 +29,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-
