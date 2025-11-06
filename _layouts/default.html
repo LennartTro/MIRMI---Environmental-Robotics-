@@ -13,12 +13,14 @@
         <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       </div>
     </header>
+    {% if page.permalink == '/' %}
     <div class="top-banner">
       <div class="container">
         <div class="top-banner-title">Environmental Robotics</div>
         <div class="top-banner-nav">{% include nav.html %}</div>
       </div>
     </div>
+    {% endif %}
 
     <main class="container">
       {{ content }}
