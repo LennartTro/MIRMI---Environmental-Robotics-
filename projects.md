@@ -7,16 +7,23 @@ permalink: /projects/
 <h1>Research</h1>
 <p>Our research spans field robotics, perception and learning for environmental monitoring, and human‑robot interaction for sustainability.</p>
 
-<h2 class="section-title">Focus Areas</h2>
-<ul class="list">
+<div class="features">
   {% for prj in site.data.projects %}
-    <li>
-      <strong>{{ prj.title }}</strong> — {{ prj.summary }}
-      {% if prj.link %} · <a href="{{ prj.link }}" target="_blank">Learn more</a>{% endif %}
-    </li>
+  <section class="feature-row {% if forloop.index0 % 2 == 1 %}reverse{% endif %}">
+    <div class="feature-image">
+      {% if prj.image %}
+        <img src="{{ prj.image | relative_url }}" alt="{{ prj.title }}">
+      {% endif %}
+    </div>
+    <div class="feature-text">
+      <h3>{{ prj.title }}</h3>
+      <p>{{ prj.summary }}</p>
+      {% if prj.link %}<a class="feature-link" href="{{ prj.link }}" target="_blank" rel="noopener">Learn more →</a>{% endif %}
+    </div>
+  </section>
   {% endfor %}
-  {% if site.data.projects == nil %}
-    <li>Coming soon.</li>
-  {% endif %}
-</ul>
 
+  {% if site.data.projects == nil %}
+    <p>Coming soon.</p>
+  {% endif %}
+</div>

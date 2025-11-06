@@ -3,8 +3,7 @@
     {% assign current = page.url | remove: site.baseurl %}
     {% for item in site.data.nav %}
       {% assign is_active = current == item.url or current == item.url | append: "/" %}
-      <li><a href="{{ site.baseurl }}{{ item.url }}" class="{% if is_active %}active{% endif %}">{{ item.title }}</a></li>
+      <li><a href="{{ item.url | relative_url }}" class="{% if is_active %}active{% endif %}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
-</nav>
-
+  </nav>
