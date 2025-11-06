@@ -46,9 +46,9 @@ main.container { padding: 28px 20px 48px; }
 
 /* Top banner under header */
 .top-banner { position: relative; color: #fff; background: var(--brand); }
-.top-banner .banner-inner { background-image: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35)), var(--banner-image); background-size: cover; background-position: center; padding: 140px 20px 24px; min-height: 420px; display: flex; flex-direction: column; justify-content: flex-end; }
+.top-banner .banner-inner { background-image: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35)), var(--banner-image); background-size: cover; background-position: center; padding: 140px 20px 80px; min-height: 420px; position: relative; }
 .top-banner-title { font-size: 2rem; font-weight: 800; margin-bottom: 16px; }
-.top-banner-nav { display: flex; justify-content: center; margin-top: 8px; padding-bottom: 12px; }
+.top-banner-nav { position: absolute; left: 0; right: 0; bottom: 16px; display: flex; justify-content: center; }
 .top-banner .nav ul { justify-content: center; flex-wrap: wrap; gap: 12px; }
 .top-banner .nav a { color: #fff; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.22); padding: 6px 12px; border-radius: 10px; }
 .top-banner .nav a:hover { background: rgba(255,255,255,0.22); }
