@@ -1,7 +1,8 @@
+---
 title: People
 layout: default
 permalink: /people/
-
+---
 <h1>People</h1>
 
 <h2 class="section-title">Faculty and Staff</h2>
