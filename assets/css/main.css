@@ -45,9 +45,10 @@ main.container { padding: 28px 20px 48px; }
 .site-footer { border-top: 1px solid var(--border); padding: 18px 0; color: var(--muted); font-size: 0.95rem; }
 
 /* Top banner under header */
-.top-banner { background: var(--brand); color: #fff; }
-.top-banner .container { padding: 28px 20px; }
-.top-banner-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 10px; }
+.top-banner { position: relative; color: #fff; background: var(--brand); }
+.top-banner { background-image: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.35)), var(--banner-image); background-size: cover; background-position: center; }
+.top-banner .container { padding: 48px 20px 24px; }
+.top-banner-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 12px; }
 .top-banner-nav { display: flex; justify-content: center; }
 .top-banner .nav ul { justify-content: center; flex-wrap: wrap; gap: 12px; }
 .top-banner .nav a { color: #fff; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.22); padding: 6px 12px; border-radius: 10px; }

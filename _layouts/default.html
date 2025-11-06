@@ -17,9 +17,9 @@
       </div>
     </header>
     {% if page.permalink == '/' %}
-    <div class="top-banner">
+    <div class="top-banner" style="--banner-image: url('{{ site.banner_image | relative_url }}');">
       <div class="container">
-        <div class="top-banner-title">Research Group</div>
+        <div class="top-banner-title">Environmental Robotics</div>
         <div class="top-banner-nav">{% include nav.html %}</div>
       </div>
     </div>

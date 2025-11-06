@@ -4,19 +4,19 @@
   links:
     website: https://example.com
     scholar: https://scholar.google.com/
-  image: /assets/images/people/avatar1.svg
+  image: /assets/images/BlueBoat.png
 
 - name: Someone
   role: PhD Researcher
   group: staff
-  image: /assets/images/people/avatar2.svg
+  image: /assets/images/Drone_2.jpg
 
 - name: Someone
   role: MSc Student
   group: student
-  image: /assets/images/people/avatar3.svg
+  image: /assets/images/SVAN-5.jpg
 
 - name: Someone
   group: alumni
   next: Robotics Industry
-  image: /assets/images/people/avatar1.svg
+  image: /assets/images/Pool_BlueBoat.jpg
