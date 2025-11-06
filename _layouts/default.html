@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ site.description }}" />
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        {% include nav.html %}
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> {{ site.title }}. All rights reserved.</p>
+      </div>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+      <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    </footer>
+  </body>
+  </html>
+

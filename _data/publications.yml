@@ -1,0 +1,14 @@
+- title: Learning-based Aerial Monitoring of Urban Heat Islands
+  authors: [J. Doe, J. Smith]
+  year: 2024
+  venue: Int. Conf. on Robotics and Automation (ICRA)
+  links:
+    doi: 10.0000/example.doi
+
+- title: Robust Underwater Mapping with Multimodal Sensing
+  authors: [A. Example, B. Alumni]
+  year: 2023
+  venue: IEEE Robotics and Automation Letters (RA-L)
+  links:
+    pdf: https://example.com/paper.pdf
+

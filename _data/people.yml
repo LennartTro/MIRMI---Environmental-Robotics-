@@ -1,0 +1,19 @@
+- name: Prof. Jane Doe
+  role: Lab Director
+  group: staff
+  links:
+    website: https://example.com
+    scholar: https://scholar.google.com/
+
+- name: John Smith
+  role: PhD Researcher
+  group: staff
+
+- name: Alice Example
+  role: MSc Student
+  group: student
+
+- name: Bob Alumni
+  group: alumni
+  next: Robotics Industry
+

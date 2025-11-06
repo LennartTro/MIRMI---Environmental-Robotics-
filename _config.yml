@@ -1,0 +1,32 @@
+title: MIRMI Environmental Robotics Lab
+description: Website of our research group
+url: "" # e.g., https://lab.example.com (set after DNS)
+baseurl: "" # set to "/<repo>" only for project pages
+permalink: /:categories/:year/:month/:day/:title/
+markdown: kramdown
+theme: null
+timezone: Europe/Berlin
+
+# Navigation data
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
