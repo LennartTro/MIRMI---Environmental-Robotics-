@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ site.description }}" />
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         {% include nav.html %}
       </div>
     </header>
@@ -26,8 +26,7 @@
       <script>
         document.getElementById('year').textContent = new Date().getFullYear();
       </script>
-      <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+      <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     </footer>
   </body>
   </html>
-
