@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
   </head>
   <body>
+    {% if page.permalink != '/' %}
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        {% if page.permalink != '/' %}
-          {% include nav.html %}
-        {% endif %}
+        {% include nav.html %}
       </div>
     </header>
+    {% endif %}
     {% if page.permalink == '/' %}
     <div class="top-banner" style="--banner-image: url('{{ site.banner_image | relative_url }}');">
       <div class="container">
