@@ -47,7 +47,12 @@ main.container { padding: 28px 20px 48px; }
 /* Top banner under header */
 .top-banner { background: var(--brand); color: #fff; }
 .top-banner .container { padding: 28px 20px; }
-.top-banner-title { font-size: 1.35rem; font-weight: 600; }
+.top-banner-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 10px; }
+.top-banner-nav { display: flex; justify-content: center; }
+.top-banner .nav ul { justify-content: center; flex-wrap: wrap; gap: 12px; }
+.top-banner .nav a { color: #fff; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.22); padding: 6px 12px; border-radius: 10px; }
+.top-banner .nav a:hover { background: rgba(255,255,255,0.22); }
+.top-banner .nav a.active { background: rgba(255,255,255,0.28); }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
