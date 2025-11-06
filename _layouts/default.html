@@ -12,7 +12,10 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        {% include nav.html %}
+        <div class="header-right">
+          {% include nav.html %}
+          {% include ext_links.html %}
+        </div>
       </div>
     </header>
     {% endif %}
@@ -21,6 +24,7 @@
       <div class="container banner-inner" style="--banner-image: url('{{ site.banner_image | relative_url }}');">
         <div class="top-banner-title">Environmental Robotics</div>
         <div class="top-banner-nav">{% include nav.html %}</div>
+        <div class="banner-icons">{% include ext_links.html %}</div>
       </div>
     </div>
     {% endif %}
